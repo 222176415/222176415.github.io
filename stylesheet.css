@@ -46,7 +46,7 @@ nav ul {
 nav ul li {
     margin-right: 10px;
     margin-left: 10px;
-    
+
 }
 
 nav ul li a {
@@ -348,15 +348,17 @@ nav ul li a {
 /* Ensure the header section is positioned correctly */
 
 #Header .container {
- 
+
     align-items: center;
     justify-content: space-between;
 }
 
 /* Style the logo */
 #Header .LOGO {
-    height: 50px; /* Adjust the height as needed */
-    width: 50px; /* Maintain aspect ratio */
+    height: 50px;
+    /* Adjust the height as needed */
+    width: 50px;
+    /* Maintain aspect ratio */
 }
 
 /* Style the navigation menu */
@@ -393,15 +395,17 @@ nav ul li a {
     color: #ffc107;
     float: left;
     font-size: 4em;
-    line-height:0.8;
+    line-height: 0.8;
     margin-right: 8px;
     font-weight: bold;
 }
-.icon{
 
-    width:100px;
+.icon {
+
+    width: 100px;
     height: 50px;
 }
+
 .thank-you-container {
     text-align: center;
     margin-top: 50px;
@@ -409,7 +413,7 @@ nav ul li a {
 
 .thank-you-container h1 {
     font-size: 2.5em;
-    color: #ffc107; 
+    color: #ffc107;
 }
 
 .thank-you-container p {
@@ -420,13 +424,14 @@ nav ul li a {
     display: inline-block;
     margin-top: 20px;
     font-size: 1.2em;
-    color:#ffc107; 
+    color: #ffc107;
     text-decoration: none;
 }
 
 .thank-you-container .home-link:hover {
     text-decoration: underline;
 }
+
 /**New Skills Section*/
 #Skills1 {
     margin: 0;
@@ -451,7 +456,7 @@ nav ul li a {
   
   .container1 {
     padding: 40px 90px;
-    margin-left:20px;
+    margin-left: 20px;
   }
   
   .heading {
@@ -463,7 +468,7 @@ nav ul li a {
   
   .bar {
     color: white;
-    font-size:30px;
+    font-size: 30px;
   }
   
   
@@ -475,11 +480,12 @@ nav ul li a {
   .Technical-bars .bar.first-child {
     margin-top: 0;
   }
+  
   .Technical-bars .bar.last-child {
     margin-bottom: 0;
   }
   
-  .Technical-bars .bar .info span{
+  .Technical-bars .bar .info span {
   
     font-size: 17px;
     font-weight: 500;
@@ -487,17 +493,125 @@ nav ul li a {
     opacity: 0;
   
   }
-  .Technical-bars .bar .progress-line{
+  
+  .Technical-bars .bar .progress-line {
   
     position: relative;
     border-radius: 10px;
     width: 100%;
     height: 5px;
     background-color: #f9f9f9;
-    animation: animate is cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
   
-  
   }
   
+  @keyframes animate {
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .Technical-bars .bar .progress-line span {
+  
+    height: 100%;
+    background-color: #ffc107;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .progress-line.html span {
+    width: 90%;
+  }
+  
+  .progress-line.css span {
+    width: 75%;
+  }
+  
+  .progress-line.JavaScript span {
+    width: 80%;
+  }
+  
+  .progress-line.Bootsrap span {
+    width: 95%;
+  }
+  
+  .progress-line.React span {
+    width: 75%;
+  }
+  
+  .progress-line.java span {
+    width: 60%;
+  }
+  
+  .progress-line.php span {
+    width: 90%;
+  }
+  
+  .progress-line span::after {
+  
+    position: absolute;
+    padding: 1px 8px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+  }
+  
+  .progress-line.html span::after {
+    content: "90%";
+  }
+  
+  .progress-line.css span::after {
+    content: "75%";
+  }
+  
+  .progress-line.JavaScript span::after {
+    content: "80%";
+  }
+  
+  .progress-line.Bootsrap span::after {
+    content: "95%";
+  }
+  
+  .progress-line.React span::after {
+    content: "75%";
+  }
+  
+  .progress-line.java span::after {
+    content: "60%";
+  }
+  
+  .progress-line.php span::after {
+    content: "90%";
+  }
+  
+  .progress-line span::before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #ffc107;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+  }
+  @keyframes showText {
+  
+    100% {
+      opacity: 1;
+    }
+  }
