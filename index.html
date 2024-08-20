@@ -8,17 +8,16 @@
     content="Explore Themba Ntimane's portfolio website, featuring his web development projects, skills, and experience as a full-stack developer and IT student.">
   <title>Themba Ntimane | Full-Stack Web Developer & IT Student | Portfolio Website</title>
   <link rel="stylesheet" href="stylesheet.css">
+
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/f9fc3e226d.js" crossorigin="anonymous"></script>
   <!----Bootsrap CDN-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
-
 <body>
- 
-  
   <!-- Header Section -->
+  
   <div id="Header">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -27,8 +26,9 @@
           <p style="color: azure;"><span class="drop-cap">T</span>hemba Ntimane</p>
         </a>
         <!-- Toggle button for mobile nav -->
-        <button class="navbar-toggler border-0" style="color: rgb(255, 210, 12);" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" style="color: rgb(255, 210, 12);" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon border-0" style="color: azure;"></span>
         </button>
         <!-- Navbar Links -->
@@ -83,14 +83,12 @@
             </ul>
           </div>
         </div>
-  </nav>
+    </nav>
     <div class="Header-text">
       <p>Full-Stack Website Developer</p>
       <h1>Hi, I'm <span>Themba Ntimane</span><br /> from South Africa</h1>
     </div>
-
   </div>
-
   <!-- About Section -->
   <div id="About">
     <div class="container">
@@ -132,45 +130,18 @@
               projects, and inspiring others to embark on their own journey of discovery in the world of
               technology.</p>
           </div>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('Education')">Education</p>
-          </div>
-          <!-- Skills -->
-          <div class="tab-contents active-tab" id="Skills">
-            <ul>
-              <li><strong>Tech Skills</strong></li>
-              <li><span>Full-Stack Development:</span> Back-End Programming and Front-End Programming</li>
-              <li><span>Software Development:</span> Windows Application Development</li>
-              <li><span>Web Development:</span> Web Application Development</li>
-              <li><strong>Soft Skills</strong></li>
-              <li>Programming and Coding</li>
-              <li>Teamwork Skills</li>
-              <li>Complex Problem Solving Skills</li>
-              <li>Public Speaking and Communication Skills</li>
-            </ul>
-          </div>
-          <!-- Education -->
-          <div class="tab-contents" id="Education">
-            <ul>
-              <li><span>2022 - Current:</span> Vaal University of Technology</li>
-              <li><span>2017 - 2021:</span> Ivory Park Secondary School</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
   </div>
-
-
+  <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('Education')">Education</p>
+  </div>
   <section id="Skills1" class="Technical-Skills">
-    <h1 class="sub-title">My <span>Skills </span></h1>
-
-
-
-    <div class="container1" id="skills">
-   
-      <h1 class="heading">Technical Skills</h1>
+    <div class="tab-contents active-tab" id="Skills">
+      <h1 class="sub-title">My <span>Skills </span></h1>
+      <h1>Technical Skills</h1>
       <div class="Technical-bars" id="TechSkills">
         <div class="bar"><i class="fa-brands fa-html5" style="color: #f06529"></i>
           <div class="indfo">
@@ -180,7 +151,6 @@
             <span></span>
           </div>
         </div>
-
         <!------>
         <div class="bar"><i class="fa-brands fa-css3" style="color:#2965f1;"></i></i>
           <div class="indfo">
@@ -234,9 +204,18 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
+    </div>
+    <section class="Education" class="tab-contents" id="Education">
+      <div>
+        <h1 class="sub-title"><span>E</span>ducation</h1>
+        <ul>
+          <li><span>2022 - Current:</span> Vaal University of Technology</li><br>
+          <li><span>2017 - 2021:</span> Ivory Park Secondary School</li><br>
+        </ul>
+      </div>
+    </section>
+  </section>
   <!-- My Services -->
   <div id="Services">
     <div class="container-lg my-5">
@@ -361,32 +340,8 @@
       <hr>
     </div>
   </footer>
-  <!-- JavaScript -->
-  <script>
 
-    function SeeTechSkills() {
-      document.getElementById('Skills1').className ="Technical-Skills";
 
-    }
-
-    function SeeProSkills() {
-      document.getElementById('Skills1').className ="ProffesionalSkills";
-
-    }
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
   <!----For Bootsrap Javascript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
