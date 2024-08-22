@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:Merriweather;
+  
 }
 
 /* Ensure the header section is positioned correctly */
@@ -92,21 +94,14 @@
   text-decoration: underline;
 }
 
+
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f0f0f0;
 }
-.custom-shape-divider-top-1724195214 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  
-}
+
 /* Header Section */
 #Header {
   background-color: #333;
@@ -171,28 +166,58 @@ nav ul li a {
 
 /* About Section */
 #About {
-  padding: 80px 0;
-  background-color: #fff;
+  padding: 60px 0;
+  background-color: #f8f9fa;
 }
 
-.about-col-1 {
-  flex: 1;
+.about-col-1 img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-col-2 {
-  flex: 1;
-  padding-left: 50px;
+.about-col-1 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.Sub-title {
-  color: #333;
-  font-size: 36px;
-  margin-bottom: 30px;
+.about-col-2 h1 {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 20px;
 }
 
-.About-me-List {
-  line-height: 1.8;
+.about-col-2 p, .about-col-2 ul {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.6;
 }
+
+.about-col-2 ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-col-2 ul li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: white;
+  color:#333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color
+  :#ffc107;
+}
+
+
 
 .tab-titles {
   display: flex;

@@ -89,57 +89,41 @@
       <h1>Hi, I'm <span>Themba Ntimane</span><br /> from South Africa</h1>
     </div>
   </div>
-  <!-- About Section -->
-  <div id="About">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="Images/Picture.jpeg" class="rounded" alt="This Is my short image" height="490px" width="360px">
-        </div>
-        <div class="about-col-2">
-          <h1 class="Sub-title">About Me</h1>
-          <div class="About-me-List">
-            <p>This is Themba, a passionate IT student diving deep into the realms of web and software
-              development. From tinkering with my first lines of code to crafting intricate projects, my
-              journey in this field has been nothing short of exhilarating.</p>
-            <h3>Finding My Path</h3>
-            <p>My fascination with technology ignited early on, sparking a curiosity that led me to explore
-              the endless possibilities of coding. I vividly remember the thrill of writing my first lines
-              of HTML and CSS, laying the foundation for what would become a lifelong passion.</p>
-            <h3>Embracing Challenges</h3>
-            <p>In the ever-evolving landscape of web and software development, I thrive on the thrill of
-              solving complex problems and pushing the boundaries of what's possible. Each challenge is an
-              opportunity to learn, grow, and refine my skills as a developer.</p>
-            <h3>A Journey of Collaboration</h3>
-            <p>Throughout my academic journey, I've had the privilege of collaborating with talented peers
-              and mentors on various projects. These experiences have not only sharpened my technical
-              abilities but also taught me the value of teamwork, communication, and adaptability.</p>
-            <h3>Tools of the Trade</h3>
-            <p>From mastering languages like JavaScript and Python to diving into frameworks like React and
-              Django, I'm constantly expanding my toolkit to stay ahead of the curve. The dynamic nature
-              of this field keeps me on my toes, driving me to explore new technologies and approaches.
-            </p>
-            <h3>Fueling My Drive</h3>
-            <p>What keeps me going? It's the endless possibilities that lie ahead, the thrill of tackling
-              new challenges, and the satisfaction of seeing my creations come to life. Whether it's
-              building sleek websites, developing robust software solutions, or pioneering innovative
-              projects, I'm committed to making an impact in the world of IT.</p>
-            <h3>Looking to the Future</h3>
-            <p>As I chart my course in the IT industry, my aspirations are bold and boundless. I envision
-              myself continuing to push the boundaries of innovation, contributing to groundbreaking
-              projects, and inspiring others to embark on their own journey of discovery in the world of
-              technology.</p>
-          </div>
+ <!-- About Section -->
+<div id="About">
+  <div class="container">
+    <div class="row">
+      <!-- Left Column (Image) -->
+      <div class="col-sm-6 col-md-5 col-lg-6 about-col-1">
+        <img src="Images/Picture.jpeg" class="rounded img-fluid" alt="This Is image">
+      </div>
+      <!-- Right Column (Text) -->
+      <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 about-col-2">
+        <h1 class="Sub-title">About Me</h1>
+        <div class="About-me-List">
+          <p>This is Themba, a passionate final-year IT student diving deep into the realms of web and software development. From tinkering with my first lines of code to crafting intricate projects with AI, my journey in this field has been nothing short of exhilarating.</p>
+          <br>
+          <p><strong>Currently Open For:</strong></p>
+          <ul>
+            <li>Web & Software Development Internships</li>
+            <li>Entry-level Jobs</li>
+            <li>Collaboration with other Developers in Private or Open Source Projects to gain valuable knowledge</li>
+          </ul>
+          <br>
+          <a href="#contact" class="btn" style=" border-color: #000000;">Contact Me</a>
         </div>
       </div>
     </div>
   </div>
+</div>
+
   <div class="tab-titles">
     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
     <p class="tab-links" onclick="opentab('Education')">Education</p>
   </div>
   <section id="Skills1" class="Technical-Skills">
     <div class="tab-contents active-tab" id="Skills">
+      <fieldset style="color: #f0db4f;">
       <h1 class="sub-title">My <span>Skills </span></h1>
       <h1>Technical Skills</h1>
       <div class="Technical-bars" id="TechSkills">
@@ -204,7 +188,7 @@
           </div>
         </div>
       </div>
-
+    </fieldset>
     </div>
     <section class="Education" class="tab-contents" id="Education">
       <div>
@@ -220,25 +204,27 @@
   <div id="Services">
     <div class="container-lg my-5">
       <h1 class="Sub-title">My Services</h1>
+      
       <div class="Services-list">
-        <div>
+        
+        <div style="border-radius: 20px;">
           <i class="fa-regular fa-window-restore"></i>
           <h2>Windows Application Development</h2>
           <p>Developing robust and efficient Windows applications tailored to meet specific business needs and
             improve operational efficiency.</p>
 
         </div>
-        <div>
+        <div style="border-radius: 20px;">
           <i class="fa-solid fa-code"></i>
           <h2>Front-End Web Development</h2>
           <p>Creating visually appealing and responsive front-end designs using HTML, CSS, and JavaScript to
             enhance user experience and engagement.</p>
 
         </div>
-        <div>
+        <div  style="border-radius: 20px;">
           <i class="fa-solid fa-database" width="50" hieght="50" class="icon"></i>
           <h2>Back-End Web Development</h2>
-          <p>Building robust and scalable back-end systems with MySQL and other database technologies to
+          <p>Building robust and scalable back-end systems with MySQL,PHP and Java to
             ensure seamless data management and application performance.</p>
 
         </div>
@@ -303,7 +289,7 @@
             <a href="https://x.com/trustblvck?s=21"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://www.facebook.com/themba.ntimane.3"><i class="fa-brands fa-facebook"></i></a>
           </div>
-          <a href="File/T_Ntimane.pdf" class="btn" download="T_Ntimane.pdf">Download CV</a><br>
+          <!---<a href="File/T_Ntimane.pdf" class="btn" download="T_Ntimane.pdf">Download CV</a><br>--->
         </div>
         <br>
         <div class="contact-right">
@@ -311,7 +297,7 @@
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn" style="border-color:#333;">Submit</button>
           </form>
         </div>
       </div>
