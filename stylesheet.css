@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Merriweather;
-  
+  font-family: Merriweather;
 }
 
 /* Ensure the header section is positioned correctly */
 
 #Header .container {
-
   align-items: center;
   justify-content: space-between;
 }
@@ -53,7 +51,6 @@
 }
 
 .drop-cap {
-
   color: #ffc107;
   float: left;
   font-size: 4em;
@@ -63,7 +60,6 @@
 }
 
 .icon {
-
   width: 100px;
   height: 50px;
 }
@@ -93,7 +89,6 @@
 .thank-you-container .home-link:hover {
   text-decoration: underline;
 }
-
 
 /* Body styles */
 body {
@@ -136,7 +131,6 @@ nav ul {
 nav ul li {
   margin-right: 10px;
   margin-left: 10px;
-
 }
 
 nav ul li a {
@@ -187,7 +181,8 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.about-col-2 p, .about-col-2 ul {
+.about-col-2 p,
+.about-col-2 ul {
   font-size: 1.1rem;
   color: #495057;
   line-height: 1.6;
@@ -204,32 +199,30 @@ nav ul li a {
 
 .btn {
   background-color: white;
-  color:#333;
+  color: #333;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
- 
+
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color
-  :#ffc107;
+  background-color: #ffc107;
 }
-#Projects .btn{
-border-radius: 10px;
-padding: 8px 8px;
-border: #000000;
-color: #ffffff;
-
-transition: background-color 0.3s ease;
-}
-#Projects .btn:hover{
+#Projects .btn {
   border-radius: 10px;
-padding-top: 10px;
-  border: #ffc107;
-  }
+  padding: 8px 8px;
+  border: #000000;
+  color: #ffffff;
 
+  transition: background-color 0.3s ease;
+}
+#Projects .btn:hover {
+  border-radius: 10px;
+  padding-top: 10px;
+  border: #ffc107;
+}
 
 .tab-titles {
   display: flex;
@@ -243,14 +236,14 @@ padding-top: 10px;
   cursor: pointer;
   padding: 10px 20px;
   background-color: #f5f5f5;
-  color:#000000;
+  color: #000000;
   margin-right: 10px;
   border-radius: 5px 5px 0 0;
 }
 
 .tab-links.active-link {
-  background-color:  #ffee01;
-  color:#000000;
+  background-color: #ffee01;
+  color: #000000;
 }
 
 .tab-contents {
@@ -482,18 +475,16 @@ padding-top: 10px;
 
 /* Footer Styles */
 footer {
-
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
 
 footer .social-icons i {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 30px;
   align-content: center;
   max-height: 100%;
-
 }
 
 footer .social-icons i:hover {
@@ -527,12 +518,12 @@ li {
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .fa {
@@ -561,7 +552,7 @@ a:hover {
   background-color: #333;
   color: #ccc;
 }
-.Education{
+.Education {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -571,7 +562,6 @@ a:hover {
 }
 
 .sub-title {
-
   text-align: center;
   font-size: 40px;
   padding-bottom: 20px;
@@ -581,7 +571,6 @@ a:hover {
 .sub-title span {
   color: #ffc107;
 }
-
 
 .container1 {
   padding: 40px 90px;
@@ -600,10 +589,8 @@ a:hover {
   font-size: 30px;
 }
 
-
 .Technical-bars .bar {
   margin: 40px 0;
-
 }
 
 .Technical-bars .bar.first-child {
@@ -615,16 +602,13 @@ a:hover {
 }
 
 .Technical-bars .bar .info span {
-
   font-size: 17px;
   font-weight: 500;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
-
 }
 
 .Technical-bars .bar .progress-line {
-
   position: relative;
   border-radius: 10px;
   width: 100%;
@@ -633,18 +617,15 @@ a:hover {
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
-
 }
 
 @keyframes animate {
-
   100% {
     transform: scaleX(1);
   }
 }
 
 .Technical-bars .bar .progress-line span {
-
   height: 100%;
   background-color: #ffc107;
   position: absolute;
@@ -683,7 +664,6 @@ a:hover {
 }
 
 .progress-line span::after {
-
   position: absolute;
   padding: 1px 8px;
   background-color: white;
@@ -739,7 +719,6 @@ a:hover {
   opacity: 0;
 }
 @keyframes showText {
-
   100% {
     opacity: 1;
   }
