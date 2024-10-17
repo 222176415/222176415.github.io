@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Explore Themba Ntimane's portfolio website, featuring his web development projects, skills, and experience as a full-stack developer and IT student.">
+<!----For social Media shares Cards-->
+    <meta property="og:title" content="Themba Ntimane | Full-Stack Developer Portfolio">
+<meta property="og:description" content="Explore Themba Ntimane's portfolio showcasing innovative web development projects. Skilled in full-stack development, seeking internships and collaborations.">
+<meta property="og:image" content="https://www.222176415.github.io/Images/Picture.jpeg">
+<meta property="og:url" content="https://www.222176415.github.io">
+<meta property="og:type" content="website">
   <title>Themba Ntimane | Full-Stack Developer & IT Student | Portfolio Website</title>
   <link rel="stylesheet" href="stylesheet.css">
 
@@ -23,12 +28,26 @@
   gtag('config', 'G-M0GPH6P83Z');
 </script>
 </head>
-
+<!---Person Schema-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Themba Ntimane",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://www.yourwebsite.com",
+    "sameAs": [
+      "https://linkedin.com/in/themba-ntimane-bb6051270",
+      "https://github.com/222176415/",
+      "https://www.instagram.com/trustblvck",
+      "https://x.com/trustblvck",
+      "https://www.facebook.com/themba.ntimane.3"
+    ]
+  }
+  </script>
 <body>
   <!-- Header Section -->
-
   <div id="Header">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container-fluid">
         <a href="#Header" class="navbar-brand fs-4">
@@ -104,7 +123,7 @@
       <div class="row">
         <!-- Left Column (Image) -->
         <div class="col-sm-6 col-md-5 col-lg-6 about-col-1">
-          <img src="Images/Picture.jpeg" class="rounded img-fluid" alt="This Is image">
+          <img src="Images/Picture.jpeg" class="rounded img-fluid" alt="Themba Ntimane - Full-Stack Developer Portrait">
         </div>
         <!-- Right Column (Text) -->
         <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 about-col-2">
@@ -305,10 +324,10 @@
   </section>
   <!-- Contacts -->
   <div id="contact">
-    <div class="container">
+    <div class="container-md">
       <div class="row">
+        <h1 class="Sub-title"><i class="fa-sharp fa-solid fa-paper-plane"></i> Contact me</h1>
         <div class="contact-left">
-          <h1 class="Sub-title"><i class="fa-sharp fa-solid fa-paper-plane"></i> Contact me</h1>
           <p><i class="fa-regular fa-envelope"></i> 222176415@edu.vut.ac.za / Ntimanethemba27@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i> 065 703 5374 / 069 169 4456</p>
           <div class="social-icons">
@@ -322,13 +341,15 @@
           <!---<a href="File/T_Ntimane.pdf" class="btn" download="T_Ntimane.pdf">Download CV</a><br>--->
         </div>
         <br>
-        <div class="contact-right">
+        <div class="contact-right"><fieldset >
           <form action="https://formspree.io/f/mwpeebkl" method="post">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn" style="border-color:#333;">Submit</button>
+            <button type="submit" class="btn" style="border-color:#333;">Send</button>
           </form>
+        </fieldset>
+          
         </div>
       </div>
     </div>

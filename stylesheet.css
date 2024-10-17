@@ -1,4 +1,4 @@
-/* Resetting default margin and padding */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +12,10 @@
   align-items: center;
   justify-content: space-between;
 }
-
-/* Style the logo */
 #Header .LOGO {
   height: 50px;
-  /* Adjust the height as needed */
   width: 50px;
-  /* Maintain aspect ratio */
+ 
 }
 
 /* Style the navigation menu */
@@ -382,10 +379,6 @@ nav ul li a {
   background-color: #f9f9f9;
 }
 
-.contact-left {
-  flex: 1;
-}
-
 .contact-left p {
   margin-top: 10px;
   font-size: 16px;
@@ -408,7 +401,6 @@ nav ul li a {
 }
 
 .contact-right {
-  flex: 1;
   padding-left: 50px;
 }
 
@@ -426,7 +418,7 @@ nav ul li a {
 }
 
 .contact-right .btn {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* Responsive Design */
